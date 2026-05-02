@@ -1,56 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+/* BODY */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #1e293b, #334155);
-    padding: 30px;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #121212;
+    color: #ffffff;
 }
 
+/* CONTAINER */
 .container {
-    background: white;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #181818;
+    padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
+/* JUDUL */
 h2 {
     margin-bottom: 15px;
+    font-weight: 600;
 }
 
-.btn {
-    display: inline-block;
-    background: #2563eb;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-bottom: 15px;
+/* BUTTON */
+button {
+    background: #1DB954;
+    color: #121212;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
+button:hover {
+    background: #1ed760;
+}
+
+/* TABLE */
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 
+/* HEADER */
 th {
-    background: #1e293b;
-    color: white;
-    padding: 10px;
+    background: #282828;
+    color: #b3b3b3;
+    padding: 12px;
+    text-align: left;
+    font-size: 13px;
 }
 
+/* DATA */
 td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    padding: 14px 12px;
+    border-bottom: 1px solid #282828;
 }
 
-tr:hover {
-    background: #f1f5f9;
+/* HOVER */
+tr:hover td {
+    background: #2a2a2a;
 }
 
+/* LINK */
+a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* AKSI */
 .edit {
-    color: green;
+    color: #22c55e;
 }
 
 .hapus {
-    color: red;
+    color: #ef4444;
+}
+
+/* INPUT */
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background: #2a2a2a;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #1DB954;
+}
+h2 {
+    font-weight: 600;
+}
+
+td {
+    font-weight: 400;
+}
+
+th {
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.subtitle {
+    color: #b3b3b3;
+    margin-top: -10px;
+    font-size: 14px;
 }

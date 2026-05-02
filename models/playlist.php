@@ -14,12 +14,15 @@ class Playlist {
   return $this->conn->query("SELECT * FROM playlist WHERE id=$id");
  }
 
- public function create($nama, $lagu) {
-  return $this->conn->query("INSERT INTO playlist(nama,lagu) VALUES('$nama','$lagu')");
+ public function create($nama, $lagu, $penyanyi) {
+  return $this->conn->query("INSERT INTO playlist(nama, lagu, penyanyi) 
+  VALUES('$nama','$lagu','$penyanyi')");
  }
 
- public function update($id, $nama, $lagu) {
-  return $this->conn->query("UPDATE playlist SET nama='$nama', lagu='$lagu' WHERE id=$id");
+ public function update($id, $nama, $lagu, $penyanyi) {
+  return $this->conn->query("UPDATE playlist 
+  SET nama='$nama', lagu='$lagu', penyanyi='$penyanyi' 
+  WHERE id=$id");
  }
 
  public function delete($id) {
